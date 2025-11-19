@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ipadma</title>
 
 <style>
   body {
     margin: 0;
     padding: 0;
-    background: black;
+    background: #000;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
   }
 
-#insta-contact-btn {
-    padding: 5px 20px;
-    font-size: 22px;
+  #insta-contact-btn {
+    padding: 10px 35px;
+    font-size: 26px;
     font-weight: 600;
     color: black;
     background: #fbff4d;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 
   #insta-contact-btn:hover {
@@ -42,9 +43,9 @@
 <button id="insta-contact-btn">Enter</button>
 
 <script>
-  const instagramUsername = "nextgendeals1";
-  document.getElementById('insta-contact-btn').addEventListener('click', () => {
-    window.open(`https://ig.me/m/${instagramUsername}`, '_blank');
+  const instagramUsername = "nextgendeals1"; // change if wrong
+  document.getElementById("insta-contact-btn").addEventListener("click", () => {
+    window.location.href = `https://ig.me/m/${instagramUsername}`;
   });
 </script>
 
